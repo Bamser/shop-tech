@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Inter&family=Roboto&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Shop-tech</title>
 </head>
 
@@ -75,43 +76,102 @@
             </div>
             <div class="header__bottom-wrapper">
                 <div class="container">
-                    <div class="header__bottom-inner">
-                        <div class="header__catalog"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M5 17C5.55228 17 6 16.5523 6 16C6 15.4477 5.55228 15 5 15C4.44772 15 4 15.4477 4 16C4 16.5523 4.44772 17 5 17Z"
-                                    fill="white" />
-                                <path
-                                    d="M26.7243 15H10.2757C9.57116 15 9 15.4209 9 15.94V16.06C9 16.5791 9.57116 17 10.2757 17H26.7243C27.4288 17 28 16.5791 28 16.06V15.94C28 15.4209 27.4288 15 26.7243 15Z"
-                                    fill="white" />
-                                <path
-                                    d="M26.7467 21H5.25333C4.56114 21 4 21.4209 4 21.94V22.06C4 22.5791 4.56114 23 5.25333 23H26.7467C27.4389 23 28 22.5791 28 22.06V21.94C28 21.4209 27.4389 21 26.7467 21Z"
-                                    fill="white" />
-                                <path
-                                    d="M26.7467 9H5.25333C4.56114 9 4 9.42085 4 9.94V10.06C4 10.5791 4.56114 11 5.25333 11H26.7467C27.4389 11 28 10.5791 28 10.06V9.94C28 9.42085 27.4389 9 26.7467 9Z"
-                                    fill="white" />
-                            </svg>
-                            <a class="header__catalog-text" href="#">Каталог товаров</a>
-                        </div>
-                        <ul class="header__menu">
-                            <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Рассрочка 0|0|18</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Сервис и гарантия</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Опт/дропшиппинг</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                    <nav class="nav">
+                        <div class="header__bottom-inner">
+                            <div class="header__catalog">
+                                <a href="#"> <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 17C5.55228 17 6 16.5523 6 16C6 15.4477 5.55228 15 5 15C4.44772 15 4 15.4477 4 16C4 16.5523 4.44772 17 5 17Z"
+                                            fill="white" />
+                                        <path
+                                            d="M26.7243 15H10.2757C9.57116 15 9 15.4209 9 15.94V16.06C9 16.5791 9.57116 17 10.2757 17H26.7243C27.4288 17 28 16.5791 28 16.06V15.94C28 15.4209 27.4288 15 26.7243 15Z"
+                                            fill="white" />
+                                        <path
+                                            d="M26.7467 21H5.25333C4.56114 21 4 21.4209 4 21.94V22.06C4 22.5791 4.56114 23 5.25333 23H26.7467C27.4389 23 28 22.5791 28 22.06V21.94C28 21.4209 27.4389 21 26.7467 21Z"
+                                            fill="white" />
+                                        <path
+                                            d="M26.7467 9H5.25333C4.56114 9 4 9.42085 4 9.94V10.06C4 10.5791 4.56114 11 5.25333 11H26.7467C27.4389 11 28 10.5791 28 10.06V9.94C28 9.42085 27.4389 9 26.7467 9Z"
+                                            fill="white" />
+                                    </svg></a>
+                                <a class="header__catalog-text" href="#">Каталог товаров</a>
+                            </div>
+                            <ul class="header__menu">
+                                <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Рассрочка 0|0|18</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Сервис и гарантия</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Опт/дропшиппинг</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 
-                        </ul>
-                    </div>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </header>
+        <section class="slider">
+            <div class="container">
+
+                <div class="swiper main__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider__desc">
+                                <h2 class="slider__title">Apple Watch
+                                    Series 6</h2>
+                                <p class="slider__text">уже в наличии</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__desc">
+                                <h2 class="slider__title">Apple Watch
+                                    Series 6</h2>
+                                <p class="slider__text">уже в наличии</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__desc">
+                                <h2 class="slider__title">Apple Watch
+                                    Series 6</h2>
+                                <p class="slider__text">уже в наличии</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__desc">
+                                <h2 class="slider__title">Apple Watch
+                                    Series 6</h2>
+                                <p class="slider__text">уже в наличии</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__desc">
+                                <h2 class="slider__title">Apple Watch
+                                    Series 6</h2>
+                                <p class="slider__text">уже в наличии</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="hit-sales goods">
+            <div class="container">
+                <div class="goods__desc">
+                    <h2 class="goods__title title">Хиты продаж</h2>
+                    <a href="#" class="goods__all">Все товары</a>
+                </div>
+                <div class="goods__cards">
+                    <div class="goods__card"></div>
+                </div>
+            </div>
+        </section> -->
         <main class="main"></main>
         <footer class="footer"></footer>
     </div>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 
