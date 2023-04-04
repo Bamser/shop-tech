@@ -71,7 +71,30 @@
                             </svg>
                         </a>
                     </div>
-                    <button class="header__button">Войти</button>
+                    <a href="#popup" class="link">Войти</a>
+                    <div id="popup" class="popup">
+                        <a href="#" class="popup__area"></a>
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <a href="#" class="popup__close">X</a>
+                                <div class="popup__title">Вход</div>
+                                <form action="" class="modal__form">
+                                    <label for="modal__email">Эл. почта или телефон</label>
+                                    <input class="modal__email" id="modal__email" type="email">
+                                    <label for="modal__password">Пароль</label>
+                                    <input class="modal__password" id="modal__password" type="password">
+                                    <a class=" fogot-pass" href="#">Забыли пароль?</a>
+                                    <div class="remember">
+                                        <input class="remember-me" id="remember-me" type="checkbox">
+                                        <label for="remember-me">Запомнить меня</label>
+                                    </div>
+                                    <button class="button__enter">Войти</button>
+                                    <a class="reg" href="#">Зарегистрироваться</a>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="header__bottom-wrapper">
